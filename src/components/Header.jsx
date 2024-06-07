@@ -60,4 +60,4 @@ const Header = ({ setCity, unit, setUnit }) => { // Function for header and prop
     );
 };
 
-export default Header; // Exporting the Header component
+export default Header; 
