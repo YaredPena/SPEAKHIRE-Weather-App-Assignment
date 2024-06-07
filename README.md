@@ -18,3 +18,7 @@ Features:
 User-friendly and responsive design.
 
   Deployment: Upload your project to GitHub and make it public.
+
+Technologies used:
+  React.Js
+  Axios
