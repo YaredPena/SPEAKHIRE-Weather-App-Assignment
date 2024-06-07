@@ -60,4 +60,4 @@ const Forecast = ({ city, unit }) => {
     );
 };
 
-export default Forecast; // Export the component as the default export
+export default Forecast; 
