@@ -1,0 +1,80 @@
+@import '../App.css'; /* Importing styles */
+
+.header {
+    display: flex; /* flex box*/
+    justify-content: space-between; /* space items evenly along the main axis */
+    align-items: center; /* center items along the cross axis */
+    padding: 10px 20px; /* padding inside the header */
+    background-color: #222222; /* Background color */
+    color: #fcfcfc; /* text color */
+}
+
+.header-title {
+    text-align: left; /* align the text left */
+    margin: 0; 
+    flex-grow: 1; /* allows the title to grow to take up available space */
+}
+
+.header-content {
+    display: flex; 
+    align-items: center; /* center items along the cross axis */
+}
+
+.search-bar {
+    background-color: #000; /* background color for the search bar */
+    color: #fff; 
+    padding: 10px 20px; /* padding inside the search bar */
+    font-size: 16px; /* font size of the text */
+    border: none; /* remove border */
+    border-radius: 25px; /* rounded corners */
+    outline: none; /* remove outline */
+    width: 300px; /* set width of the search bar */
+    max-width: 100%; /* maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* box shadow for a slight elevation effect */
+    margin-right: 10px; /* adds some space to the right of the search bar */
+}
+
+.search-button {
+    background-color: #000;
+    color: #fff; 
+    padding: 10px 15px; /* padding inside the button */
+    font-size: 16px; /* font size of the text */
+    border: none; /* Remove border */
+    border-radius: 25px;
+    outline: none; /* Remove outline */
+    width: auto; /* allow button to adjust width based on content */
+    max-width: 100px; /* maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation effect */
+    margin-right: 10px; /* adds some space to the right of the button */
+    cursor: pointer; /* change the cursor to pointer on hover */
+}
+
+.location-button {
+    padding: 10px 15px; /* padding inside the button */
+    font-size: 16px; /* font size of the text */
+    border: none; 
+    border-radius: 25px; 
+    background-color: #6200ea; /* background color for the button */
+    color: #fff; 
+    cursor: pointer; /* change cursor to pointer on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* box shadow for a slight elevation effect */
+    outline: none; 
+    margin-right: 10px; /* add some space between the buttons */
+}
+
+.unit-button {
+    padding: 10px 15px; /* Padding inside the button */
+    font-size: 16px; /* Font size of the text */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #ff5722; /* Background color for the button */
+    color: #fff; 
+    cursor: pointer; /* change cursor to pointer on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* box shadow for a slight elevation effect */
+    outline: none; 
+    margin-right: 10px;
+}
+
+.unit-button:hover {
+    background-color: #f4511e; /* change background color*/
+}

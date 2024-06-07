@@ -1,0 +1,65 @@
+.throughout-day-weather {
+    /* sets the position of the component at the bottom center of the screen */
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* sets the width, background color, padding, border radius, shadow, and text color */
+    width: 90%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    /* allows horizontal scrolling and limit the maximum height */
+    overflow-x: auto;
+    max-height: 25%;
+    /* prevents wrapping of text */
+    white-space: nowrap;
+}
+
+.title {
+    /* align the title to the left with flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title h2 {
+    /* remove the margin from the h2 element and set font size */
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.weather-container {
+    /* aligns weather cards to the left with flexbox */
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* allow horizontal scrolling and smooth scrolling behavior */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* prevents wrapping of weather cards */
+    flex-wrap: nowrap;
+    padding: 10px; /* Add padding */
+}
+
+.weather-card {
+    /* A fixed width for the weather card */
+    flex: 0 0 auto;
+    width: 150px;
+    margin-right: 10px; /* margin between weather cards */
+    background: #2672cfd5;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* smooth transition on weather card */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+    /* scale up and modify background color on hover */
+    transform: scale(1.1);
+    background: #5fa6d8;
+}

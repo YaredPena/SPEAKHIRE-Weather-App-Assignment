@@ -1,0 +1,88 @@
+/* Container for highlights */
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px; /* Add padding */
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* adds position relative for absolute positioning */
+    max-width: 700px; /* Sets a maximum width */
+    margin: 0 auto; /* centers the container */
+}
+
+/* Title for highlights */
+.highlights-title {
+    margin-top: -50px; /* increases top margin */
+    position: absolute; /* positions the title absolutely */
+    top: 20px; 
+    left: 20px; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    z-index: 1; /* title remains above other elements */
+}
+
+/* Row for highlights */
+.highlight-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Individual highlight item */
+.highlight-item {
+    width: calc(50% - 10px); /* Two items per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #444;
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    margin-bottom: 10px; /* margin for spacing */
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Title for each highlight item */
+.highlight-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Value for each highlight item */
+.highlight-value {
+    font-size: 16px; /* smaller font size */
+}
+
+/* Indicator bar style */
+.indicator-bar {
+    width: 50%; /* customizes  width for indicator bar */
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* indicator bar text css */
+.indicator-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    /* Fixes item for 3 items per row */
+    .highlight-item {
+        width: calc(33.333% - 10px);
+        margin-bottom: 10px; /*sets spacing through margin*/
+    }
+}

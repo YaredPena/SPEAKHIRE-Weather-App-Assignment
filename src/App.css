@@ -1,0 +1,154 @@
+/* App.css */
+
+/* Overall styling for the body */
+body {
+  background-color: #181818; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif; /* You can choose any font you prefer */
+}
+
+/* Styling for dark headers */
+.dark-header {
+  background-color: #242424; /* Slightly lighter dark for headers */
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for dark cards */
+.dark-card {
+  background-color: #333333; /* Card background */
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for better visualization */
+}
+
+/* Styling for dark input fields */
+.dark-input {
+  background-color: #444444; /* Input fields background */
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling for dark buttons */
+.dark-button {
+  background-color: #555555; /* Button background */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hover effect for dark buttons */
+.dark-button:hover {
+  background-color: #666666;
+}
+
+/* Styling for dark forecast items */
+.dark-forecast-item {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Styling for the main app container */
+.App {
+  text-align: center;
+}
+
+/* Styling for the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Styling for the city input field */
+.city-input {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Styling for the content container */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+}
+
+/* Styling for the left panel */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%; /* Adjust as needed */
+  margin-right: 20px; /* Space between panels */
+}
+
+/* Styling for the right panel */
+.right-panel {
+  width: 65%; /* Adjust as needed */
+}
+
+/* Styling for the highlights container */
+.highlights-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Take the full width of the right panel */
+}
+
+/* Styling for individual highlight items */
+.highlight-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for highlight titles */
+.highlight-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for the indicator bar */
+.indicator-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Styling for the indicator text */
+.indicator-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*.wind-speed-map {*/
+/* width: 300px;  Adjust as needed */
+/* margin-left: 20px; Adjust as needed */

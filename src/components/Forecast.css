@@ -1,0 +1,42 @@
+.forecast-container {
+    padding: 20px; /* extra padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #333; 
+    color: #fff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding depth */
+    margin-top: 250px; 
+    width: 300px; /* Adjust Width for container*/
+    position: absolute;
+    left: 20px; /* Position to the left */
+}
+
+.forecast {
+    display: flex; /* flexbox */
+    flex-direction: column; /* formatting children in columns */
+    align-items: flex-start; /* aligning children to the start */
+}
+
+.forecast-title {
+    font-size: 20px; /* Font size for the title */
+}
+
+.forecast-item {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* space out the children */
+    align-items: center; /* Align children to the center */
+    margin-top: 10px; /*  adds extra space above each item */
+    width: 100%; /*takes full width */
+}
+
+.weather, .date, .day {
+    flex: 1; /* extra flex */
+    text-align: center; /* Center the text */
+}
+
+.weather {
+    text-align: left; /* text to the left */
+}
+
+.day {
+    text-align: right; /* tto the right */
+}
