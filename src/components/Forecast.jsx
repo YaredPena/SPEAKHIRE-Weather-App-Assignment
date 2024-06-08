@@ -43,7 +43,7 @@ const Forecast = ({ city, unit }) => {
     return (
         <div className="forecast-container">
             <div className="forecast">
-                <strong className="forecast-title">4-Day Forecast</strong>
+                <strong className="forecast-title">5-Day Forecast</strong>
                 {forecastData.map((day, index) => {
                     // Calculate temperature based on the selected unit
                     const temperature = unit === 'celsius' ? day.main.temp : (day.main.temp * 9 / 5) + 32;
